@@ -1,0 +1,13 @@
+# Ignore build and debug files
+bin/
+obj/
+
+# Ignore editor settings
+.vscode/
+
+# Ignore temporary files and logs
+*.log
+*.suo
+*.user
+*.userosscache
+
