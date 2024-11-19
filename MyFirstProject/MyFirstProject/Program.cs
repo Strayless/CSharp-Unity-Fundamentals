@@ -114,6 +114,40 @@ namespace HelloWorld
             System.Console.WriteLine(firstNum / secondNum); //division
             System.Console.WriteLine(firstNum % secondNum); //remainder
 
+        //Variables
+            var age4 = 23;
+            Console.WriteLine(age4);
+
+            var negative1 = -55.2; 
+            System.Console.WriteLine(negative1);
+
+            var precision2 = 6.0001;
+            System.Console.WriteLine(precision2);
+
+            var money2 = 15.88M;
+            System.Console.WriteLine(money2);
+
+            var name2  = "Chirag";
+            System.Console.WriteLine(name2);
+
+
+            var letter2 =  'f';
+            System.Console.WriteLine(letter2);
+
+            //using var too much doesn't make sense for good code readability, using the actual 
+            //datatypes is always better
+
+
+            //Const keyword
+
+            const int vat = 20; //declaring the constant, and the value doesn't change
+            const double percentVAT = vat / 100D;
+            System.Console.WriteLine(vat);
+
+            int balance  = 1000;
+            System.Console.WriteLine(balance * percentVAT);
+
+            const string version = "v1.0";
         }
     }
 }
