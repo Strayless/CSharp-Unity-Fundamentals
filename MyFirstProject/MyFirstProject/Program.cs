@@ -31,40 +31,89 @@ namespace HelloWorld
             Console.WriteLine(age);
 
             //displaying the range of int
-            System.Console.WriteLine(int.MinValue);
-            System.Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(int.MaxValue);
 
             string textbigNumber = "7000000";
             long bigNumber = Convert.ToInt64(textbigNumber); 
             Console.WriteLine(bigNumber);
 
             //displaying the range of long
-            System.Console.WriteLine(long.MinValue);
-            System.Console.WriteLine(long.MaxValue);
+            Console.WriteLine(long.MinValue);
+            Console.WriteLine(long.MaxValue);
 
             string textnegative= "-77.2";
             double negative = Convert.ToDouble(textnegative);
             Console.WriteLine(negative);
 
             //displaying the range of double
-            System.Console.WriteLine(double.MinValue);
-            System.Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
+            Console.WriteLine(double.MaxValue);
 
             string textprecision = "5.000001";
             float precision = Convert.ToSingle(textprecision);
             Console.WriteLine(precision);
 
             //displaying the range of Float
-            System.Console.WriteLine(float.MinValue);
-            System.Console.WriteLine(float.MaxValue);
+            Console.WriteLine(float.MinValue);
+            Console.WriteLine(float.MaxValue);
 
             string textMoney = "17.88";
             decimal money = Convert.ToDecimal(textMoney);
             Console.WriteLine(money);
 
             //displaying the range of Decimal
-            System.Console.WriteLine(decimal.MinValue);
-            System.Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
+            Console.WriteLine(decimal.MaxValue);
+
+
+        
+             
+        // Booleans
+            bool value = true; 
+            bool isMale = true;
+            Console.WriteLine(isMale);  // Prints 'True'
+
+            isMale = false; 
+            Console.WriteLine(isMale);  // Prints 'False'
+
+        //Operators
+
+
+            age++;
+            age = age + 1;
+            age += 10;
+            Console.WriteLine(age);
+            age--;
+            Console.WriteLine(age);
+
+            double age1 = 23; 
+            // + - /
+            age1 /= 10; // 2.3 -> 2
+            System.Console.WriteLine(age1);
+
+            string nam1 = "Chirag";
+            nam1+= " is programming!";
+
+            name += " is gonna become a goat at C#";
+            System.Console.WriteLine(name);
+
+            Console.WriteLine(nam1);
+
+            char ch = 'a';
+            ch += 'f';
+            System.Console.WriteLine(ch);
+
+            int c = 0;
+            System.Console.WriteLine(++c);
+            System.Console.WriteLine(c++);
+
+            double firstNum = 10;
+            double secondNum = 3;
+
+            System.Console.WriteLine(firstNum / secondNum); //division
+            System.Console.WriteLine(firstNum % secondNum); //remainder
+
         }
     }
 }
