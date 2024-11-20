@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO.Compression;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Reflection.PortableExecutable;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HelloWorld
 {
@@ -13,6 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            // Existing logic from your current Program.cs
 
             int x = 10, y = 20, z = 30;
 
@@ -25,12 +19,12 @@ namespace HelloWorld
             System.Console.WriteLine();
             Console.WriteLine(letter);
 
-            //Converting Strings to Numeric Data Types
+            // Converting Strings to Numeric Data Types
             string textAge = "-22";
             int age = Convert.ToInt32(textAge);  
             Console.WriteLine(age);
 
-            //displaying the range of int
+            // Displaying the range of int
             Console.WriteLine(int.MinValue);
             Console.WriteLine(int.MaxValue);
 
@@ -38,7 +32,7 @@ namespace HelloWorld
             long bigNumber = Convert.ToInt64(textbigNumber); 
             Console.WriteLine(bigNumber);
 
-            //displaying the range of long
+            // Displaying the range of long
             Console.WriteLine(long.MinValue);
             Console.WriteLine(long.MaxValue);
 
@@ -46,7 +40,7 @@ namespace HelloWorld
             double negative = Convert.ToDouble(textnegative);
             Console.WriteLine(negative);
 
-            //displaying the range of double
+            // Displaying the range of double
             Console.WriteLine(double.MinValue);
             Console.WriteLine(double.MaxValue);
 
@@ -54,7 +48,7 @@ namespace HelloWorld
             float precision = Convert.ToSingle(textprecision);
             Console.WriteLine(precision);
 
-            //displaying the range of Float
+            // Displaying the range of Float
             Console.WriteLine(float.MinValue);
             Console.WriteLine(float.MaxValue);
 
@@ -62,14 +56,11 @@ namespace HelloWorld
             decimal money = Convert.ToDecimal(textMoney);
             Console.WriteLine(money);
 
-            //displaying the range of Decimal
+            // Displaying the range of Decimal
             Console.WriteLine(decimal.MinValue);
             Console.WriteLine(decimal.MaxValue);
 
-
-        
-             
-        // Booleans
+            // Booleans
             bool value = true; 
             bool isMale = true;
             Console.WriteLine(isMale);  // Prints 'True'
@@ -77,9 +68,7 @@ namespace HelloWorld
             isMale = false; 
             Console.WriteLine(isMale);  // Prints 'False'
 
-        //Operators
-
-
+            // Operators
             age++;
             age = age + 1;
             age += 10;
@@ -88,16 +77,13 @@ namespace HelloWorld
             Console.WriteLine(age);
 
             double age1 = 23; 
-            // + - /
             age1 /= 10; // 2.3 -> 2
             System.Console.WriteLine(age1);
 
             string nam1 = "Chirag";
-            nam1+= " is programming!";
-
+            nam1 += " is programming!";
             name += " is gonna become a goat at C#";
             System.Console.WriteLine(name);
-
             Console.WriteLine(nam1);
 
             char ch = 'a';
@@ -110,11 +96,10 @@ namespace HelloWorld
 
             double firstNum = 10;
             double secondNum = 3;
+            System.Console.WriteLine(firstNum / secondNum); // Division
+            System.Console.WriteLine(firstNum % secondNum); // Remainder
 
-            System.Console.WriteLine(firstNum / secondNum); //division
-            System.Console.WriteLine(firstNum % secondNum); //remainder
-
-        //Variables
+            // Variables
             var age4 = 23;
             Console.WriteLine(age4);
 
@@ -130,24 +115,45 @@ namespace HelloWorld
             var name2  = "Chirag";
             System.Console.WriteLine(name2);
 
-
-            var letter2 =  'f';
+            var letter2 = 'f';
             System.Console.WriteLine(letter2);
 
-            //using var too much doesn't make sense for good code readability, using the actual 
-            //datatypes is always better
-
-
-            //Const keyword
-
-            const int vat = 20; //declaring the constant, and the value doesn't change
+            // Const keyword
+            const int vat = 20; // Declaring the constant, and the value doesn't change
             const double percentVAT = vat / 100D;
             System.Console.WriteLine(vat);
 
-            int balance  = 1000;
+            int balance = 1000;
             System.Console.WriteLine(balance * percentVAT);
 
             const string version = "v1.0";
+
+            // Now integrating Constants.cs and Exercise.cs logic
+            
+            // Accessing Constants from Constants.cs
+            Console.WriteLine("VAT: " + Constants.Program.vat);
+            Console.WriteLine("Balance with VAT: " + (Constants.Program.balance * Constants.Program.percentVAT));
+            Console.WriteLine("Version: " + Constants.Program.version);
+
+            // Exercise program logic from Exercise.cs
+            string myName = "Chirag";
+            string myPhoneNumber = "123-456-7890";
+            int myAge = 23;
+
+            Console.WriteLine("My Name: " + myName);
+            Console.WriteLine("My Phone Number: " + myPhoneNumber);
+            Console.WriteLine("My Age: " + myAge);
+
+            // Extra: Define variables using the 'var' keyword
+            var extraName = "Chirag";
+            var extraPhoneNumber = "123-456-7890";
+            var extraAge = 23;
+
+            Console.WriteLine("Extra Name: " + extraName);
+            Console.WriteLine("Extra Phone Number: " + extraPhoneNumber);
+            Console.WriteLine("Extra Age: " + extraAge);
+
+             Exercise.Program.DisplayVariables(); 
         }
     }
 }
