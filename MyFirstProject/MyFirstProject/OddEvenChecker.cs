@@ -17,6 +17,10 @@ namespace OddEven
             int num2 = 2;
             int remainder = num1 % num2; 
             System.Console.WriteLine(remainder);
+
+            num1 = 11;
+            remainder = num1 % num2;
+            System.Console.WriteLine(remainder);
         }
     }
 }

@@ -154,7 +154,8 @@ namespace HelloWorld
             Console.WriteLine("Extra Age: " + extraAge);
 
              Exercise.Program.DisplayVariables();
-             OddEven.Program.OddEvenCheck(); 
+             OddEven.Program.OddEvenCheck();
+             ConsoleIO.Program.Consoler();
         }
     }
 }
