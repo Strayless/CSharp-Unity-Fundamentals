@@ -153,7 +153,8 @@ namespace HelloWorld
             Console.WriteLine("Extra Phone Number: " + extraPhoneNumber);
             Console.WriteLine("Extra Age: " + extraAge);
 
-             Exercise.Program.DisplayVariables(); 
+             Exercise.Program.DisplayVariables();
+             OddEven.Program.OddEvenCheck(); 
         }
     }
 }
